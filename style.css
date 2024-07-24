@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+}
+html, body,div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.responsive-img {
+  height: 1100px;
+  width: 100%;
+  max-width: 1500px;
+  object-fit: cover;
+}
+body {
+    line-height: 1;
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container1{
+  display: flex;
+  flex-direction: row;
+}
+.bt1{
+    color: white;
+    background-color: #a79770;
+    border-radius: 20px;
+    border-color: #a79770;
+    border:none;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 5px;
+}
+.flex1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex1 div {
+  margin: 5px;
+}
+.center {
+  position: relative;
+  text-align: center;
+  margin: 5px;
+}
+.center1 {
+  background-color: white;
+  position: relative;
+  text-align: center;
+  margin: 5px;
+}
+.text1 {
+  position: absolute;
+  top: 50%;
+  left :6%;
+  color:white;
+}
+#blackbg{
+  background-color: black;
+  color: white;
+  max-width: 2000px;
+  width: 100%;
+  padding: 20px; 
+}
+#graybg{
+  background-color: grey;
+  color: white;
+  max-width: 2000px;
+  width: 100%;
+  padding: 20px;
+}
+#dkgrbg{
+  background-color: rgb(47, 47, 47);
+  color: white;
+  max-width: 2000px;
+  width: 100%;
+  padding: 20px;
+}
+.center2 {
+  background-color: transparent;
+  color:white;
+}
+.top{
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+.top h1 {
+  margin-bottom: 20px;
+}
+.flex-container {
+  display: flex;
+  justify-content:space-around;
+  margin-top: 20px;
+}
+.flex-item {
+  width: 250px;
+  margin: 5px;
+  padding: 15px;
+  background:white;
+  color: black;
+  border-radius: 10px;
+}
+.bt2 {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border:none;
+  background-color:green;
+  color: white;
+  border-radius: 5px;
+}
+.bt2:hover {
+  background-color: lightgreen;
+}
+.td2{
+  margin: 30px;
+  padding: 30px;
+}
+@media only screen and (min-device-width: 1200px){
+    .text-block {
+      width: 420px;
+      position: absolute;
+      top: 100px;
+      left: 100px;
+      right: 100px;
+      background-color: white;
+      font-size: large;
+      color: black;
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 30px;
+    }
+    #h1,#h2{
+      font-weight: bold;
+    }
+    .flex1 div {
+      width: calc(100% / 3 - 10px);
+  }
+  }
+@media screen and (min-device-width: 800px) and (max-device-width: 1200px) {
+.text-block {
+    width: 500px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    right: 100px;
+    background-color: white;
+    font-size: x-large;
+    color: black;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+  #h1,#h2{
+    font-weight: bold;
+  }
+  .flex1 div {
+    width: calc(100% / 2 -5px);
+}
+}
+@media screen and (min-device-width: 400px) and (max-device-width: 800px) {
+  .text-block {
+      width: 320px;
+      position: absolute;
+      top: 80px;
+      left: 30px;
+      right: 100px;
+      background-color: white;
+      font-size: x-large;
+      color: black;
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 30px;
+    }
+    #h1{
+      font-size: 50px;
+      font-weight: bold;
+    }
+    #h2{
+      font-size: 40px;
+      font-weight: bold;
+    }
+    .flex1 div {
+      width: calc(100% - 2px);
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+  @media screen and (max-device-width: 400px) {
+    .text-block {
+        width: 300px;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        right: 100px;
+        background-color: white;
+        font-size: 20px;
+        color: black;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+      }
+      #h1{
+        font-size: 40px;
+        font-weight: bold;
+      }
+      #h2{
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .flex1 div {
+        width: calc(100%);
+    }
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+    }
+    }
+    @media screen and (min-device-width: 1000px) {
+      .contact{
+        display:flex;
+        flex-direction: row;
+      } 
+    }
+    @media screen and (max-device-width: 1000px) {
+      .contact{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+
